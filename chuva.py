@@ -12,10 +12,10 @@ while index != linha:
     mudou = False
     for j in range(colunas):
         if index != 0:
-            if parede[index-1][j] == 'o' and parede[index][j] != '#':  # em cima
+            if parede[index-1][j] == 'o' and parede[index][j] != '#':
                 parede[index][j] = 'o'
         if index % 2 == 0 and index != linha - 1:
-            if parede[index+1][j] == '#' and parede[index][j] == 'o':  # em baixo
+            if parede[index+1][j] == '#' and parede[index][j] == 'o':
                 if j < colunas - 1 and parede[index][j+1] != 'o' and '#':
                     parede[index][j+1] = 'o'
                     mudou = True
