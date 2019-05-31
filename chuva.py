@@ -3,6 +3,7 @@ parede = []
 index = 0
 mudou = False
 
+
 for k in range(linha):
     parede.append(list(map(str, input().split())))
 
